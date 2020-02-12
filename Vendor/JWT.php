@@ -6,6 +6,10 @@ use \InvalidArgumentException;
 use \UnexpectedValueException;
 use \DateTime;
 
+use AppleSignIn\Vendor\Exception\BeforeValidException;
+use AppleSignIn\Vendor\Exception\ExpiredException;
+use AppleSignIn\Vendor\Exception\SignatureInvalidException;
+
 /**
  * JSON Web Token implementation, based on this spec:
  * https://tools.ietf.org/html/rfc7519
