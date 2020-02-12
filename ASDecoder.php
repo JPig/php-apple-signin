@@ -101,11 +101,11 @@ class ASPayload {
         return $this->_instance->$key = $val;
     }
 
-    public function getEmail() : ?string {
+    public function getEmail() : string {
         return (isset($this->_instance->email)) ? $this->_instance->email : null;
     }
 
-    public function getUser() : ?string {
+    public function getUser() : string {
         return (isset($this->_instance->sub)) ? $this->_instance->sub : null;
     }
 
