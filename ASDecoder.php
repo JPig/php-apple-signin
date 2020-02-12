@@ -82,7 +82,7 @@ class ASDecoder {
 class ASPayload {
     protected $_instance;
 
-    public function __construct(?object $instance) {
+    public function __construct(object $instance) {
         if(is_null($instance)) {
             throw new Exception('ASPayload received null instance.');
         }
